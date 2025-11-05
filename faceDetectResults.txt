@@ -1,0 +1,33 @@
+EXAMPLE SHOWING THE RESULT FOR NO FACES DETECTED
+DetectionResult(detections=[])
+
+EXAMPLE SHOWING THE RESULT FOR ONE FACE DETECTED
+DetectionResult(detections=[Detection(bounding_box=BoundingBox(origin_x=655, origin_y=298, width=335, height=335),
+                                      categories=[Category(index=0, score=0.542550802230835, display_name=None, category_name=None)],
+                                      keypoints=[NormalizedKeypoint(x=0.37430429458618164, y=0.38134002685546875, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.4167500138282776, y=0.38162940740585327, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.36820879578590393, y=0.4425138235092163, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.3845674991607666, y=0.4945124387741089, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.4038430154323578, y=0.3894782066345215, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.5082108378410339, y=0.3880600929260254, label='', score=0.0)]
+                                      )
+                           ]
+                )
+
+EXAMPLE SHOWING THE RESULT FOR TWO FACES DETECTED
+DetectionResult(detections=[Detection(bounding_box=BoundingBox(origin_x=791, origin_y=597, width=345, height=345),
+                                      categories=[Category(index=0, score=0.9290380477905273, display_name=None, category_name=None)],
+                                      keypoints=[NormalizedKeypoint(x=0.48082613945007324, y=0.6314752697944641, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.5582872033119202, y=0.634667694568634, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.5337358713150024, y=0.6994372010231018, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.5269673466682434, y=0.7716260552406311, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.41098475456237793, y=0.6752788424491882, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.5797754526138306, y=0.6757296919822693, label='', score=0.0)]),
+                            Detection(bounding_box=BoundingBox(origin_x=359, origin_y=626, width=213, height=213),
+                                      categories=[Category(index=0, score=0.546917200088501, display_name=None, category_name=None)],
+                                      keypoints=[NormalizedKeypoint(x=0.20581382513046265, y=0.6883695721626282, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.2294442355632782, y=0.6613752245903015, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.22063714265823364, y=0.7353760600090027, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.24467428028583527, y=0.7514758706092834, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.22278541326522827, y=0.6607984900474548, label='', score=0.0),
+                                                 NormalizedKeypoint(x=0.27756935358047485, y=0.5841487050056458, label='', score=0.0)])])
