@@ -33,7 +33,6 @@ def runPoseDetector(source=0):
     # Set up camera
     cap = cv2.VideoCapture(source)
 
-    i = 0
     while True:
         gotIm, frame = cap.read()
         if not gotIm:
@@ -58,19 +57,12 @@ def runPoseDetector(source=0):
         if segMasks is not None and len(segMasks) > 0:
             segIm = segMasks[0].numpy_view()
             cv2.imshow("SegMask", segIm)
-            segWrit = 255 * segIm
-            cv2.imshow("segWrit", segWrit)
-            if i % 30 == 0:
-                cv2.imwrite("poseSegm" + str(i) + ".png", segWrit)
         cv2.imshow("Detected", vis_image)
 
         x = cv2.waitKey(10)
         if x > 0:
             if chr(x) == 'q':
                 break
-        if i % 30 == 0:
-            cv2.imwrite("poseSkel" + str(i) + ".png", vis_image)
-        i += 1
     cap.release()
 
 
@@ -110,4 +102,4 @@ def findHandsUp(detect_result):
 
 
 if __name__ == "__main__":
-    runPoseDetector("../../SampleVideos/womanBeach.mp4")
+    runPoseDetector(0)
